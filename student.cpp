@@ -7,6 +7,38 @@ fstream fout;
 int age;
 string name,place,gender;
 
+void visa()
+{
+    cout<<"\n-----------------------\n";
+    cout<<"\nVISA PROCESS PROCESS\n";
+    cout<<"\nVisa process initiated\n";
+    string need,applied;
+    cout<<"\nDo you need a visa? (yes/no): ";
+    cin>>need;  
+    if(need == "yes")
+    {
+        cout<<"\nInform student about visa requirements.\n";
+        while(true)
+        {
+        cout<<"\nHave you applied for the visa? (yes/no): ";
+        cin>>applied;
+        if(applied == "yes")
+        {
+            cout<<"\nVisa application is in process.\n";
+            tutionFee();
+            break;
+        }
+        else
+        {
+            cout<<"\nPlease apply for the visa.\n";
+        }
+        }
+    }
+    else
+    {
+        tutionFee();    
+    }
+}
 
 void sendToDatabase()
 {
@@ -18,6 +50,27 @@ void sendToDatabase()
     fout.close();
     cout<<"\nData saved successfully.\n";
     visa();
+}
+
+void verification()
+{
+    cout<<"\n-----------------------\n";
+    cout<<"\nVERIFICATION PROCESS\n";
+    cout<<"\nVerify it by the admission committee\n";
+    string verify;
+    cout<<"\nDid you verify the data? (yes/no): ";
+    cin>>verify;
+    if(verify=="yes")
+    {
+        cout<<"\nData verified successfully.\n";
+        sendToDatabase();
+    }
+    else
+    {
+        cout<<"\nPlease re-enter the data.\n";
+        registeration();
+    }
+
 }
 
 void registeration()
