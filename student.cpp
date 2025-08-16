@@ -7,6 +7,34 @@ fstream fout;
 int age;
 string name,place,gender;
 
+void finalize()
+{
+    cout<<"\n-----------------------\n";
+    cout<<"\nFINALIZE PROCESS\n";
+    cout<<"\nFinalizing the student admission process.\n";
+    cout<<"\nThank you for completing the registration.\n";
+}
+
+void assignTutor()
+{
+    cout<<"\n-----------------------\n";
+    cout<<"\nASSIGN TUTOR PROCESS\n";
+    cout<<"\nAssign a personal tutor for the student\n";
+    cout<<"\nMeet the tutor and discuss the course details\n";
+    string credit;
+    cout<<"\nDoes the student have extra credits? (yes/no): \n";
+    cin>>credit;
+    if(credit == "yes")
+    {
+        cout<<"\nChoose the extra credit courses.\n";
+    }
+    else
+    {
+        cout<<"\nNo extra credits assigned.\n";
+    }
+    finalize();
+}
+
 void accomodation()
 {
     cout<<"\n-----------------------\n";
