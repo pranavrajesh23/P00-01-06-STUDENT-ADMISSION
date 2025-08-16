@@ -7,6 +7,29 @@ fstream fout;
 int age;
 string name,place,gender;
 
+void tutionFee()
+{
+    cout<<"\n-----------------------\n";
+    cout<<"\nTUTION FEE PROCESS\n";
+    cout<<"\nPay the tution fee\n";
+    while (true)
+    {
+        string fee;
+        cout<<"\nHave you paid the tution fee? (yes/no): \n";
+        cin>>fee;
+        if(fee == "yes")
+        {
+            cout<<"\nTution fee paid successfully.\n";
+            accomodation();
+            break;
+        }
+        else
+        {
+            cout<<"\nPlease pay the tution fee.\n";
+        }
+    }
+}
+
 void visa()
 {
     cout<<"\n-----------------------\n";
