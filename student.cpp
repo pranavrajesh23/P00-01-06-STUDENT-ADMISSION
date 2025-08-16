@@ -7,6 +7,19 @@ fstream fout;
 int age;
 string name,place,gender;
 
+
+void sendToDatabase()
+{
+    cout<<"\n-----------------------\n";
+    cout<<"\nSAVING DATA TO DATABASE PROCESS\n";
+    cout<<"\nSending the data to corresponding departments\n";
+    fout.open(database, ios::out | ios::app);
+    fout<<name<<","<<age<<","<<place<<","<<gender<<"\n";
+    fout.close();
+    cout<<"\nData saved successfully.\n";
+    visa();
+}
+
 void registeration()
 {
     cout<<"\n-----------------------\n";
