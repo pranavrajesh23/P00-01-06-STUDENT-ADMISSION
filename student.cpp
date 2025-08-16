@@ -7,6 +7,24 @@ fstream fout;
 int age;
 string name,place,gender;
 
+void accomodation()
+{
+    cout<<"\n-----------------------\n";
+    cout<<"\nACCOMODATION PROCESS\n";
+    cout<<"\nDo you need accommodation? (yes/no): \n";
+    string need;
+    cin>>need;  
+    if(need=="yes")
+    {
+        cout<<"\nAssign the accommodation\n";
+    }
+    else
+    {
+        cout<<"\nNo accommodation needed.\n";
+    }
+    assignTutor();
+}
+
 void tutionFee()
 {
     cout<<"\n-----------------------\n";
