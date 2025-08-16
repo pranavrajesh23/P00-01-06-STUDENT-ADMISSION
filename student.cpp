@@ -6,6 +6,8 @@ string database="student.csv";
 fstream fout;
 int age;
 string name,place,gender;
+void sendToDatabase();
+void registeration();
 
 void finalize()
 {
